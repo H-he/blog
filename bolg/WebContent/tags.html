@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 移动端页面设置 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>标签详情页</title>
+<!-- 引入Semantic UI前端框架  cdn-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+<link rel="stylesheet" href="./static/css/me.css" />
+</head>
+<body>
+<!-- 导航 -->
+<!-- UI组件 ，inverted 颜色反转 ，attach依附,使四边圆角贴边 ，segment片段，类似一个带边框 ,m开头自定义类-->
+ <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<!--  container令盒子左右padding更大,自适应,即盒子居中 ;stackable可堆叠，屏幕小有作用-->
+   <div class="ui container">
+     <div class="ui inverted secondary menu stackable">
+<!--      teal蓝绿色 -->
+       <h2 class="ui teal header item">Blog</h2>
+       <a href="#" class="item m-item m-mobile-hide"><i class="home icon"></i>首页</a>
+       <a href="#" class="item m-item m-mobile-hide"><i class="tasks icon"></i>分类</a>
+       <a href="#" class="item m-item m-mobile-hide active"><i class="tags icon"></i>标签</a>
+       <a href="#" class="item m-item m-mobile-hide"><i class="book icon"></i>归档</a>
+       <a href="#" class="item m-item m-mobile-hide"><i class="info icon"></i>关于我</a>
+       <div class="right item m-item m-mobile-hide">
+<!--          有input icon里面方能使用其样式 -->
+       	<div class="ui input icon">
+       		<input type="text" placeholder="search..." />
+       		<i class="search link icon"></i>
+       	</div>
+       </div>
+     </div>
+   </div>
+   <a href="#" class="ui menu toggle black button m-right-top m-mobile-show">
+   	<i class="sidebar icon"></i>
+   </a>
+ </nav>
+ 
+<!-- 中间部分 -->
+<div class="m-container-small m-padded-tb-big">
+	<div class="ui container">
+<!-- 		中间页面头部header -->
+		<div class="ui top attached segment">
+			<div class="ui middle aligned two column grid">
+				<div class="column">
+					<h3 class="ui teal header">标签</h3>
+				</div>
+				<div class="column right aligned">
+					共<h3 class="ui orange header m-inline-block"> 14 </h3>个
+				</div>
+			</div>
+		</div>
+<!-- 		中间页面中间部分content：标签+文章 -->
+		<div class="ui attached segment m-padded-tb-large">
+			<a href="#" target="_blank" class="ui teal basic large left pointing label m-margin-tb-tiny">
+				方法论<span class="detail">23</span>
+			</a>
+			<a href="#" target="_blank" class="ui basic large left pointing label m-margin-tb-tiny">
+				方法论<span class="detail">23</span>
+			</a>		
+			<a href="#" target="_blank" class="ui basic large left pointing label m-margin-tb-tiny">
+				方法论<span class="detail">23</span>
+			</a>		
+			<a href="#" target="_blank" class="ui basic large left pointing label m-margin-tb-tiny">
+				方法论<span class="detail">23</span>
+			</a>		
+			<a href="#" target="_blank" class="ui basic large left pointing label m-margin-tb-tiny">
+				方法论<span class="detail">23</span>
+			</a>		
+		</div>
+		<div class="ui top attached teal segment">
+<!-- 		每篇文章样式 -->
+			<div class="ui m-padded vertical segment m-padded-tb-large m-mobile-lr-clear">
+				<div class="ui mobile reversed stackable grid">
+					<div class="eleven wide column">
+						<h3 class="ui header">外交部回应邀请欧盟人士访疆：欧方竟提出这种要求</h3>
+						<p class="m-text">汪文斌表示，中方欢迎外国各界人士到新疆去走一走、看一看。过去几年，100多个国家的1200余名外交官记者和宗教人士都访问了新疆，他们通过实地访问了解到新疆的真实情况，认为自己在新疆看到的和一些西方媒体报道的完全不一样。
+						</p>
+						<div class="ui stackable grid">
+							<div class="row">
+								<div class="eleven wide column">
+	<!-- 										横horizontal的列表link list,avatar image圆形小图标 -->
+									<div class="ui mini horizontal link list">
+										<div class="item">
+	<!-- 												<img src="https://picsum.photos/id/0/100/100" alt="" class="ui avatar image" /> -->
+											<img src="./static/images/鹿.jpg" alt="" class="ui avatar image" />
+											<div class="content"><a href="#" class="header">小菜鸟</a></div>
+										</div>
+										<div class="item">
+											<i class="calendar icon"></i>2021-02-27
+										</div>
+										<div class="item">
+											<i class="eye icon"></i>2345
+										</div>
+									</div>
+								</div>
+								<div class="right aligned five wide column">
+									<a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+								</div>
+							</div>
+							<div class="row">
+								<a href="#" target="_blank" class="ui teal basic large left pointing label m-margin-tb-tiny m-padded-mini m-text-thin">
+									方法论<span class="detail">23</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="five wide column">
+						<a href="#" target="_blank">
+<!-- 									<img src="https://picsum.photos/id/0/800/450" alt="" class="ui rounded image"/> -->
+							<img src="./static/images/鹿.jpg" alt="" class="ui rounded image"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="ui m-padded vertical segment m-padded-tb-large m-mobile-lr-clear">
+				<div class="ui mobile reversed stackable grid">
+					<div class="eleven wide column">
+						<h3 class="ui header">外交部回应邀请欧盟人士访疆：欧方竟提出这种要求</h3>
+						<p class="m-text">汪文斌表示，中方欢迎外国各界人士到新疆去走一走、看一看。过去几年，100多个国家的1200余名外交官记者和宗教人士都访问了新疆，他们通过实地访问了解到新疆的真实情况，认为自己在新疆看到的和一些西方媒体报道的完全不一样。
+						</p>
+						<div class="ui stackable grid">
+							<div class="row">
+								<div class="eleven wide column">
+	<!-- 										横horizontal的列表link list,avatar image圆形小图标 -->
+									<div class="ui mini horizontal link list">
+										<div class="item">
+	<!-- 												<img src="https://picsum.photos/id/0/100/100" alt="" class="ui avatar image" /> -->
+											<img src="./static/images/鹿.jpg" alt="" class="ui avatar image" />
+											<div class="content"><a href="#" class="header">小菜鸟</a></div>
+										</div>
+										<div class="item">
+											<i class="calendar icon"></i>2021-02-27
+										</div>
+										<div class="item">
+											<i class="eye icon"></i>2345
+										</div>
+									</div>
+								</div>
+								<div class="right aligned five wide column">
+									<a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+								</div>
+							</div>
+							<div class="row">
+								<a href="#" target="_blank" class="ui teal basic large left pointing label m-margin-tb-tiny m-padded-mini m-text-thin">
+									方法论<span class="detail">23</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="five wide column">
+						<a href="#" target="_blank">
+<!-- 									<img src="https://picsum.photos/id/0/800/450" alt="" class="ui rounded image"/> -->
+							<img src="./static/images/鹿.jpg" alt="" class="ui rounded image"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- 		中间页面尾部footer -->
+		<div class="ui attached bottom segment">
+			<div class="ui middle aligned two column grid">
+				<div class="column">
+<!-- 						basic背景色透明 -->
+					<a href="#" class="ui mini teal basic button">上一页</a>
+				</div>
+				<div class="column right aligned">
+					<a href="#" class="ui mini teal basic button">下一页</a>
+				</div>
+			</div>
+		</div>
+	
+		
+	</div>
+
+</div>
+<!--  <br> -->
+<!--  底部 -->
+ <footer class="ui segment inverted vertical m-padded-tb-massive">
+ 	<div class="ui center aligned container">
+ <!--  center aligned 居中对齐	，divided分割条 ，grid把宽度分成16等份 ,一般线条和文字默认白色，反转背景色记得发展线字颜色,link list 列表组件-->
+ 		<div class="ui inverted stackable grid divided ">
+	 		<div class="three wide column">
+	 			<div class="ui inverted link list">
+	 				<div class="item">
+	 					<img alt="sword" src="./static/images/sword.jpg" class="ui rounded image" style="width:110px">
+	 				</div>
+	 			</div>
+	 		</div>	
+	 		<div class="three wide column">
+	 			<h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+	 			<div class="ui inverted link list">
+	 				<a href="#" class="item">用户故事（User Story）</a>
+	 				<a href="#" class="item">关于刻意练习的清单</a>
+	 				<a href="#" class="item">失败要趁早</a>
+	 			</div>
+	 		</div>	
+	 		<div class="three wide column">
+	 			<h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+	 			<div class="ui inverted link list">
+	 				<a href="#" class="item">Email：...</a>
+	 				<a href="#" class="item">QQ:..</a>
+	 				<a href="#" class="item">WeChat：</a>
+	 			</div>
+			</div>
+	 		<div class="seven wide column">
+	 			<h4 class="ui inverted header m-text-thin m-text-spaced ">he-cookie</h4>
+	 			<p class="m-text-thin m-text-spaced m-opacity-mini">这是我个人博客，希望对每个访问者提供灵感</p>
+	 		</div>	
+ 		</div>
+<!--  		section盒子里放一条横线divider -->
+ 		<div class="ui inverted section divider"></div>
+ 		<p class="m-text-thin m-text-spaced m-opacity-tiny ">copyright</p>
+ 	</div>
+ </footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+<script>
+// 	点击类.menu.toogle，.m-item有m-mobile-hide就祛除掉m-mobile-hide
+	$('.menu.toggle').click(function(){
+		$('.m-item').toggleClass('m-mobile-hide');
+	});
+// 	点击payButton会自动浮现payQR
+	$('#payButton').popup({
+		popup: $('.payQR.popup'),
+		on: 'click',
+		position: 'bottom center'
+	});
+</script>
+</body>
+</html>

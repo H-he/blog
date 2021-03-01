@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 移动端页面设置 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>关于我详情页</title>
+<!-- 引入Semantic UI前端框架  cdn-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+<link rel="stylesheet" href="./static/css/me.css" />
+</head>
+<body>
+<!-- 导航 -->
+<!-- UI组件 ，inverted 颜色反转 ，attach依附,使四边圆角贴边 ，segment片段，类似一个带边框 ,m开头自定义类-->
+ <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<!--  container令盒子左右padding更大,自适应,即盒子居中 ;stackable可堆叠，屏幕小有作用-->
+   <div class="ui container">
+     <div class="ui inverted secondary menu stackable">
+<!--      teal蓝绿色 -->
+       <h2 class="ui teal header item">Blog</h2>
+       <a href="#" class="item m-item m-mobile-hide"><i class="home icon"></i>首页</a>
+       <a href="#" class="item m-item m-mobile-hide"><i class="tasks icon"></i>分类</a>
+       <a href="#" class="item m-item m-mobile-hide"><i class="tags icon"></i>标签</a>
+       <a href="#" class="item m-item m-mobile-hide"><i class="book icon"></i>归档</a>
+       <a href="#" class="item m-item m-mobile-hide active"><i class="info icon"></i>关于我</a>
+       <div class="right item m-item m-mobile-hide">
+<!--          有input icon里面方能使用其样式 -->
+       	<div class="ui input icon">
+       		<input type="text" placeholder="search..." />
+       		<i class="search link icon"></i>
+       	</div>
+       </div>
+     </div>
+   </div>
+   <a href="#" class="ui menu toggle black button m-right-top m-mobile-show">
+   	<i class="sidebar icon"></i>
+   </a>
+ </nav>
+ 
+<!-- 中间部分 -->
+<div class="m-container-small m-padded-tb-big">
+	<div class="ui container">
+		<div class="ui stackable grid">
+			<div class="eleven wide column">
+				<img src="./static/images/鹿.jpg" alt="" class="ui rounded image fluid" />
+			</div>
+			<div class="five wide column">
+				<div class="ui top attached segment">
+					<div class="ui header">关于我</div>
+				</div>	
+				<div class="ui attached segment">
+					<p class="m-text">一个拖延症晚期患者，以下凑字数。</p>
+					<p class="m-text">噫吁嚱，危乎高哉！蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。西当太白有鸟道，可以横绝峨眉巅。地崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹。</p>
+				</div>
+				<div class="ui attached segment">
+					<div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+					<div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+					<div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+					<div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+					<div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+				</div>
+				<div class="ui attached segment">
+					<div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
+				</div>
+				<div class="ui bottom attached segment">
+					<a href="#" class="ui circular icon button">
+						<i class="github icon"></i>
+					</a>
+					<a href="#" class="ui wechat circular icon button">
+						<i class="weixin icon"></i>
+					</a>
+					<a href="#" class="ui qq circular icon button" data-content="88888888" data-position="bottom center">
+						<i class="qq icon"></i>
+					</a>
+				</div>
+				<div class="ui wechatQR flowing popup transition hidden">
+					<img src="./static/images/sword.jpg" alt="" class="ui rounded image" style="width: 110px" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--  <br> -->
+<!--  底部 -->
+ <footer class="ui segment inverted vertical m-padded-tb-massive">
+ 	<div class="ui center aligned container">
+ <!--  center aligned 居中对齐	，divided分割条 ，grid把宽度分成16等份 ,一般线条和文字默认白色，反转背景色记得发展线字颜色,link list 列表组件-->
+ 		<div class="ui inverted stackable grid divided ">
+	 		<div class="three wide column">
+	 			<div class="ui inverted link list">
+	 				<div class="item">
+	 					<img alt="sword" src="./static/images/sword.jpg" class="ui rounded image" style="width:110px">
+	 				</div>
+	 			</div>
+	 		</div>	
+	 		<div class="three wide column">
+	 			<h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+	 			<div class="ui inverted link list">
+	 				<a href="#" class="item">用户故事（User Story）</a>
+	 				<a href="#" class="item">关于刻意练习的清单</a>
+	 				<a href="#" class="item">失败要趁早</a>
+	 			</div>
+	 		</div>	
+	 		<div class="three wide column">
+	 			<h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+	 			<div class="ui inverted link list">
+	 				<a href="#" class="item">Email：...</a>
+	 				<a href="#" class="item">QQ:..</a>
+	 				<a href="#" class="item">WeChat：</a>
+	 			</div>
+			</div>
+	 		<div class="seven wide column">
+	 			<h4 class="ui inverted header m-text-thin m-text-spaced ">he-cookie</h4>
+	 			<p class="m-text-thin m-text-spaced m-opacity-mini">这是我个人博客，希望对每个访问者提供灵感</p>
+	 		</div>	
+ 		</div>
+<!--  		section盒子里放一条横线divider -->
+ 		<div class="ui inverted section divider"></div>
+ 		<p class="m-text-thin m-text-spaced m-opacity-tiny ">copyright</p>
+ 	</div>
+ </footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+<script>
+// 	点击类.menu.toogle，.m-item有m-mobile-hide就祛除掉m-mobile-hide
+	$('.menu.toggle').click(function(){
+		$('.m-item').toggleClass('m-mobile-hide');
+	});
+	$('.wechat').popup({
+		popup: $('.wechatQR'),
+// 		on: 'hover',
+		position: 'bottom center'
+	});
+// 	滑到.qq会自动浮现data-content内容
+	$('.qq').popup();
+</script>
+</body>
+</html>
